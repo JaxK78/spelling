@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>UIL Spelling Practice</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Lilita+One&display=swap" rel="stylesheet">
+  <style>
+    body {
+      text-align: center;
+      background-color: #073763ff;
+    }
+
+    h1 {
+      font-size: 60px;
+      text-align: center;
+      color: white;
+      font-family: 'Lilita One', cursive;
+    }
+
+    button, p {
+      font-family: 'Lilita One', cursive;
+      font-size: 30px;
+      background-color: #cc4331; /* Set button color */
+      color: white; /* Set text color */
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+    }
+
+    input[type="text"] {
+      font-family: 'Lilita One', cursive;
+      font-size: 30px;
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    #feedback {
+      font-size: 24px;
+      color: #fff;
+      margin-top: 10px;
+    }
+  </style>
+</head>
+<body>
+  <h1>UIL Spelling Practice</h1>
+  <button onclick="readAndSpeakWord()">Hear Word</button>
+  <input type="text" id="userInput" placeholder="Type the word..." onkeyup="handleKeyPress(event)">
+  <button onclick="checkSpelling()">Check Spelling</button>
+  <p id="feedback"></p>
+
+  <script src="script.js"></script>
+</body>
+</html>
